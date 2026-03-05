@@ -47,12 +47,14 @@ nasaruddin-portfolio/
 ---
 
 ## 📬 Contact
-Email: nasaruddin.ahtamir@gmail.com
-LinkedIn: linkedin.com/in/nasaruddin-st-86a593258
-GitHub: github.com/naz-ahtamir
+- Email: nasaruddin.ahtamir@gmail.com
+- LinkedIn: linkedin.com/in/nasaruddin-st-86a593258
+- GitHub: github.com/naz-ahtamir
 
 ---
 
 ## ⚖️ License
 © 2026 Nasaruddin. All rights reserved.
+
 This project is built for personal branding and portfolio purposes.
+
