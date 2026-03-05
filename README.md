@@ -24,14 +24,15 @@ A personal portfolio website built with **HTML & CSS**, showcasing my journey as
 ---
 
 ## 📂 Project Structure
-naz-portfolio/
+```
+nasaruddin-portfolio/
 ├── index.html        # Main portfolio page
 ├── images/           # Project screenshots
 │   ├── SafetyComplaint.png
 │   ├── PenggunaanP3K.png
 │   └── PTW.png
 └── README.md         # Documentation
-
+```
 ---
 
 ## 🚀 Getting Started
