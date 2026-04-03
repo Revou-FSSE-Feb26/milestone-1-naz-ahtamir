@@ -2,8 +2,22 @@
 <html lang="EN" class="scroll-smooth">      
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nasaruddin.ahtamir-portfolio</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="Portfolio of Nasaruddin Ahtamir – web developer and designer. Explore responsive web projects, HTML/CSS work, and technical collaborations. Contact for opportunities!">
+    <meta name="keywords" content="Nasaruddin Ahtamir, portfolio, web developer, web design, front-end developer, GitHub Pages, responsive design">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nasaruddin.github.io/">
+    <meta property="og:title" content="Nasaruddin Ahtamir | Web Developer & Designer Portfolio">
+    <meta property="og:description" content="Portfolio of Nasaruddin Ahtamir – web developer and designer. View projects, responsive designs, and technical work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nasaruddin.github.io/">
+    <meta property="og:image" content="https://nasaruddin.github.io/images/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nasaruddin Ahtamir | Web Developer & Designer Portfolio">
+    <meta name="twitter:description" content="Portfolio of Nasaruddin Ahtamir – web developer and designer. View projects, responsive designs, and technical work.">
+    <meta name="twitter:image" content="https://nasaruddin.github.io/images/preview.jpg">
+    <meta name="google-site-verification" content="5n1BR2CHWcxtqKw4xwNAb4pCUKZmLv2qoY3jx4IInnc" />
+    <title>Nasaruddin Ahtamir | Web Developer & Designer Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style type="text/tailwindcss">
@@ -11,43 +25,74 @@
             --font-grotesk: 'Space Grotesk', sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
         }
+
+        @keyframes typing7 {
+            from {width: 0;}
+            to {width: 9ch;}
+        }        
+
+        @keyframes typing10 {
+            from {width: 0;}
+            to {width: 20ch;}
+        }
+
+        @keyframes blink {
+            50% {border-color: transparent;}
+        }
+
+        .animate-typing7 {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #00e5ff;
+            animation: typing7 3s steps(7, end) infinite, blink .7s step-end infinite;
+        }
+
+        .animate-typing10 {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid white;
+            animation: typing10 4s steps(13, end) infinite, blink .7s step-end infinite;
+        }
+
     </style>
 </head>
-<body class="font-grotesk bg-black text-white antialiased relative">
-    <nav class="fixed top-0 left-0 right-0 z-50 
-            bg-gradient-to-r from-black via-[#0a1a24] to-[#00e5ff]/20 
+<body class="font-grotesk bg-black text-white antialiased relative            
+            bg-cover bg-center min-h-screen">
+    <nav class="fixed top-0 right-0 left-0 justify-end z-50            
             backdrop-blur-md border-b border-[#00e5ff] 
             transition-all duration-300 
-            hover:from-[#001f33] hover:via-[#00334d] hover:to-[#00e5ff]/40">
-        <div class="max-w-7xl mx-auto flex justify-end items-center px-6 py-3 gap-6">
+            hover:from-[#001f33] hover:via-[#00334d] hover:to-[#00e5ff]/40
+            hidden md:flex">
+        <div class="max-w-7xl ml-auto flex justify-end items-center px-6 py-3 gap-6">
                 <ul class="desktop-nav flex items-center gap-8">
-                        <li><a href="#home" class="relative text-xs tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
+                        <li><a href="#home" class="relative text-sm tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
                             transition-colors duration-300 
                             hover:text-[#00e5ff] hover:after:w-full font-mono">HOME</a></li>
-
-                            <li><a href="#about" class="relative text-xs tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
+                        <li><a href="#about" class="relative text-sm tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
                             transition-colors duration-300 
                             hover:text-[#00e5ff] hover:after:w-full font-mono">ABOUT</a></li>
-                        <li><a href="#projects" class="relative text-xs tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
+                        <li><a href="#projects" class="relative text-sm tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
                             transition-colors duration-300 
                             hover:text-[#00e5ff] hover:after:w-full font-mono">PROJECTS</a></li>
-                        <li><a href="#contact" class="relative text-xs tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
+                        <li><a href="#contact" class="relative text-sm tracking-[0.15em] text-[rgba(226,240,247,0.5)] 
                             transition-colors duration-300 
                             hover:text-[#00e5ff] hover:after:w-full font-mono">CONTACT</a></li>
                     </ul>
     </nav>
     
     <main>
-        <section id="home" class="relative min-h-screen flex items-center grid-bg pt-16 overflow-hidden">
+        <section id="home" class="relative min-h-screen flex items-center pt-16 overflow-hidden">
             <div class="max-w-6xl mx-auto px-6 py-20 relative z-10 w-full">
-                <div class="max-w-3xl">
+                <div>
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-8 h-px bg-[#00e5ff]"></div>
-                        <span class="text-[#00e5ff] tracking-[0.2em] text-[0.7rem] uppercase font-mono font-bold">Hello, World</span></div>
+                        <span class="text-[#00e5ff] tracking-[0.2em] text-[0.7rem] uppercase font-mono font-bold animate-typing10">Hello, World</span></div>
 
                     <h1 class="font-bold leading-none mb-4 text-[clamp(3rem,8vw,5.5rem)]">
                         <span class="text-white">NASARUDDIN</span><br>
-                        <span class="text-cyan-400 drop-shadow-[0_0_22px_#00e5ff]">AHTAMIR</span></h1>
+                        <span class="animate-typing7 inline-block text-cyan-400 drop-shadow-[0_0_22px_#00e5ff]">AHTAMIR</span></h1>
                     
                     <div class="font-bold text-sm mb-8 flex flex-wrap gap-2">
                         <span class="px-3 py-1 text-xs bg-[rgba(0,229,255,0.1)] border border-[rgba(0,229,255,0.3)] text-[#00e5ff] font-mono">  Software Engineer</span>
@@ -55,7 +100,7 @@
                         <span class="px-3 py-1 text-xs bg-[rgba(168,85,247,0.1)] border border-[rgba(168,85,247,0.3)] text-[#a855f7] font-mono">  OHS Expert</span>
                         <span class="px-3 py-1 text-xs bg-[rgba(0,255,136,0.1)] border border-[rgba(0,255,136,0.3)] text-[#00ff88] font-mono">  OHS Management System Auditor</span></div>
                         
-                    <p>Coming from a background in leading teams and keeping workplaces safe, I now bring that same discipline into Software Engineering. My goal is to build <span class="text-[#00e5ff]">dependable and scalable solutions</span>, guided by a detail‑oriented mindset to tackle complex challenges across industries.</p>
+                    <p class="text-justify">Coming from a background in leading teams and keeping workplaces safe, I now bring that same discipline into Software Engineering. My goal is to build <span class="text-[#00e5ff]">dependable and scalable solutions</span>, guided by a detail‑oriented mindset to tackle complex challenges across industries.</p>
 
                     <div class="flex flex-wrap gap-4 mt-8">
                         <a href="#projects" class="inline-flex items-center gap-2 w-55
@@ -91,7 +136,7 @@
                         </article>
         </section>
         
-        <section id="projects" class="py-24 relative grid-bg">
+        <section id="projects" class="py-24 relative">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="flex items-center gap-3 mb-3">
                     <div class="w-8 h-px bg-[#00e5ff]"></div>
@@ -103,38 +148,53 @@
                     <span class="text-[#ff6b2b] drop-shadow-[0_0_10px_#ff6b2b]">WORK</span>
                 </h2>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <article class="bg-[#0a1a24]/60 shadow-md p-4 flex flex-col items-center">
+                <article class="grid md:grid-cols-2 gap-6 mb-22">                    
+                    <figure class="mb-8 md:mb-0 relative overflow-hidden flex justify-start">
+                        <a href="https://tally.so/r/0Q7Lz9" target="_blank" rel="noopener noreferrer">    
+                        <img alt="Project Safety Complain" class="w-full h-auto cursor-pointer transition-transform duration-300 hover:scale-88 max-h-[70vh] object-contain items-left rounded-3xl" src="images/SafetyComplaint.png"/></a>
+                    </figure>
+                        
+                    <div class="ml-0 md:ml-8 flex flex-col items-start justify-center">
+                        <span class="text-xs tracking-widest uppercase">Industrial Compliance Tool</span>
                         <a href="https://tally.so/r/0Q7Lz9" target="_blank" rel="noopener noreferrer">
-                        <h3 class="text-lg font-semibold text-[#ffcf01] mb-2">Safety Complain</h3></a>
-                        <figure class="w-full h-full overflow-hidden">
-                            <a href="https://tally.so/r/0Q7Lz9" target="_blank" rel="noopener noreferrer">
-                            <img src="images/SafetyComplaint.png" alt="Safety Complain" class="w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105 hover:rotate-0"/></a>
-                        </figure>
-                    </article>                    
-            
-                    <article class="bg-[#0a1a24]/60 shadow-md p-4 flex flex-col items-center">
+                        <h3 class="text-[#ffcf01] text-3xl font-bold uppercase">Safety Complain</h3></a>
+                        <p class="mb-8 leading-relaxed text-justify">
+                            A web‑based reporting tool designed to capture workplace safety issues directly from users. It provides a structured way for employees or stakeholders to submit hazard complaints in real time, ensuring that incidents are documented quickly and consistently. The form is hosted online, making it accessible from any device without requiring installation, and it integrates fields for describing hazards, categorizing risks, and triggering follow‑up actions. In essence, it’s a digital entry point for a broader safety management system, helping organizations streamline compliance, track interventions, and promote a culture of proactive risk reporting.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="grid md:grid-cols-2 gap-6 mb-22">                    
+                     <div class="order-2 md:order-1 mr-0 md:mr-8 flex flex-col items-start justify-center">
+                        <span class="text-xs tracking-widest uppercase text-justify md:text-right">Interactive Games</span>
                         <a href="https://naz-ahtamir.github.io/Lomba-Lari/shake-race-player/" target="_blank" rel="noopener noreferrer">
-                        <h3 class="text-lg font-semibold text-[#00cfff] mb-2">Shake Run</h3></a>
-                        <figure class="w-full h-full overflow-hidden">
-                            <a href="https://naz-ahtamir.github.io/Lomba-Lari/shake-race-player.html" target="_blank" rel="noopener noreferrer">
-                            <img src="images/ShakeRun.png" alt="Shake Run" class="w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105 hover:rotate-0"/></a>
-                        </figure>
-                    </article>
-
-                    <article class="bg-[#0a1a24]/60 shadow-md p-4 flex flex-col items-center">
+                        <h3 class="text-3xl font-bold uppercase text-[#00cfff] text-justify md:text-right">Shake Run</h3></a>
+                        <p class="mb-8 leading-relaxed text-justify">
+                            A web‑based motion game that runs directly in the browser, designed to turn a smartphone into a controller by using its accelerometer and gyroscope sensors. Instead of tapping buttons, players move their avatar by physically shaking or tilting their device, creating a fast‑paced and highly interactive racing experience. With a responsive HTML/CSS layout, custom fonts, and JavaScript handling real‑time motion events, the game blends accessibility and excitement—requiring no installation, yet delivering competitive, immersive gameplay that connects physical movement with digital racing fun.
+                        </p>
+                    </div>
+                    <figure class="mb-8 md:mb-0 relative overflow-hidden order-1 md:order-2">
+                        <a href="https://naz-ahtamir.github.io/Lomba-Lari/shake-race-player.html" target="_blank" rel="noopener noreferrer">    
+                        <img alt="Project Safety Complain" class="w-full h-auto cursor-pointer transition-transform duration-300 hover:scale-88 max-h-[100vh] object-contain items-right rounded-3xl" src="images/ShakeRun.png"/></a>
+                    </figure>                    
+                </article>   
+                
+                <article class="grid md:grid-cols-2 gap-6 mb-22 flex justify-start">                    
+                    <figure class="mb-8 md:mb-0 relative rounded-3xl">
+                        <a href="https://tally.so/r/dWEXDD" target="_blank" rel="noopener noreferrer">    
+                        <img alt="Project Safety Complain" class="w-full h-auto cursor-pointer transition-transform duration-300 hover:scale-88 max-h-[80vh] object-contain items-left rounded-3xl" src="images/PTW.png"/></a>
+                    </figure>
+                        
+                    <div class="ml-0 md:ml-8 flex flex-col items-start justify-center">
+                        <span class="text-xs tracking-widest uppercase">Digital Safety Management</span>
                         <a href="https://tally.so/r/dWEXDD" target="_blank" rel="noopener noreferrer">
-                        <h3 class="text-lg font-semibold text-[#f4f4f4] mb-2">Permit To Work</h3></a>
-                        <figure class="w-full h-full overflow-hidden">
-                            <a href="https://tally.so/r/dWEXDD" target="_blank" rel="noopener noreferrer">
-                            <img src="images/PTW.png" alt="Permit To Work" class="w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105 hover:rotate-0"/></a>
-                        </figure>
-                    </article>
-                </div>
-            </div>
-        </section>
+                        <h3 class="text-[#f4f4f4] text-3xl font-bold uppercase">Permit To Work</h3></a>
+                        <p class="mb-8 leading-relaxed text-justify">
+                            A comprehensive digital document designed to standardize and control the process of requesting and authorizing work permits in industrial or operational environments. It gathers detailed information such as the safety supervisor’s name and ID, the responsible unit, the person in charge of the job, the exact work location, and a clear description of the task, along with the submission date. By requiring these fields, the form ensures that every permit request is properly documented, traceable, and aligned with safety compliance standards. Its structured layout not only helps supervisors evaluate risks and responsibilities before work begins, but also creates a centralized record that supports accountability, regulatory audits, and operational transparency. In practice, this form functions as both a safety checkpoint and an administrative log, bridging communication between management, safety officers, and workers to reduce hazards and maintain consistent oversight across multiple job sites..
+                        </p>
+                    </div>
+                </article>
 
-        
         <section id="contact" class="py-24 relative">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="flex items-center gap-3 mb-3">
@@ -188,9 +248,7 @@
                             </a>
                         </div>
                     </div>               
-            
-
-                    <!-- Contact form -->
+                    
                     <div class="p-6 bg-[#0a1520] border border-[#1a3a4a] shadow-md">
                         <p class="text-[#e2f0f7] font-bold text-lg mb-6">Send a Message</p>  
 
